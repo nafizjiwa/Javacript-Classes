@@ -29,3 +29,11 @@ You can define 2 main areas of a class which are created:
     let variable name = new ojbect name
   Third add parenthese to call the constructor method and set object up.
     let variable name = new object name();
+    
+NOW THE INSTANCE PROPERTIES CAN BE DEFINED IN THE CONSTRUCTOR
+
+HOW TO DEFINE INSTANCE PROPERTIES? 
+1.Use the 'this' keyword
+  'this' refers to the current object being created by the class. 
+2.Use 'keyword' with property name
+Result --> this.property name
