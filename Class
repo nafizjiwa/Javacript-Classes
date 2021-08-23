@@ -1,0 +1,31 @@
+CLASSES
+They are used to create one or more objects. The object is used by the program to do things.
+You can define 2 main areas of a class which are created:
+  1. What an object will have --> Called an Instance property.
+      Instance properties describes the property - Data about property
+      eg. Person (properties): name, height, age.
+  2. What an object will do --> Called an Instance method.
+      Instance methods use instances properties to get their results. 
+      eg. Person (mehtods): run, walk, jump. talk [their actions and behariors.]
+      
+      
+ How to create a class?
+  First use the class keyword. 
+  Second use the class name ==> class Name (first letter capped)
+  Third use parentheses containing the class definition. 
+  Fourth A class should have a constructor. Which is a method run once when object is created (sets up object). 
+  Result ==>
+    class Name {
+      definition
+      constructor {
+      -BEHAVES LIKE A METHOD AND IS USED TO SET UP THE OBJECT-
+      }
+    }
+    
+**ONCE THE CLASS IS CREATED AN OBJECT FOR THAT CLASS CAN BE CREATED. 
+  First create a variable
+    let variable name
+  Second set variable equal to the new class created using the 'new' keyword and objects name
+    let variable name = new ojbect name
+  Third add parenthese to call the constructor method and set object up.
+    let variable name = new object name();
