@@ -12,12 +12,13 @@ You can define 2 main areas of a class which are created:
       eg. Person (mehtods): run, walk, jump. talk [their actions and behariors.]
       
       
- How to create a class?
-    1. Use the class keyword.
-    2. Use the class name ==> class Name (first letter capped)
-    3. Use parentheses `{}` containing the class definition.
-    4. Contain a constructor. A method run when object is created. 
+ How to create a class?</br>
+    1. Use the class keyword.</br>
+    2. Use the class name ==> class Name (first letter capped)</br>
+    3. Use parentheses `{}` containing the class definition.</br>
+    4. Contain a constructor. A method run when object is created.</br> 
   Result ==>
+  
       class Name {
         definition
         constructor {
