@@ -1,17 +1,15 @@
 # Javacript-Classes
 
 ## CLASSES
-- Used to create objects.
-- The objects do things in progams.
-You can define 2 main areas of a class which are created:
-  1. What an object will have --> Called an Instance property.
-      Instance properties describes the property - Data about property
+- A blueprint used to create objects.
+- The objects do an action.
+- The class creates:
+  1. What an object will have --> each Instance has properties - Data
       eg. Person (properties): name, height, age.
-  2. What an object will do --> Called an Instance method.
-      Instance methods use instances properties to get their results. 
+  2. What an object will do --> each Instance has methods.
+      Instance methods use instances properties to get results. 
       eg. Person (mehtods): run, walk, jump. talk [their actions and behariors.]
-      
-      
+       
  ### How to create a class?</br>
     1. Use class keyword.</br>
     2. Use the class Name (first letter capped)</br>
@@ -21,7 +19,8 @@ You can define 2 main areas of a class which are created:
   
         class Name {
           definition
-          constructor {
+          constructor 
+          `remainder of class body`
           - A METHOD AND IS USED TO SET UP THE OBJECT-
           }
         }
@@ -39,29 +38,9 @@ NOW THE INSTANCE PROPERTIES CAN BE DEFINED IN THE CONSTRUCTOR
 #### HOW TO DEFINE INSTANCE PROPERTIES? 
 1.Use the 'this' keyword
   'this' refers to the current object being created by the class. 
-2.Use 'keyword' with property name
-Result --> this.property name
+2.Use 'this' keyword with property name
+  Result --> this.property name
 
-## Class Declaration Vs Class Expression
-
-### Declaration
-`class` keyword and the class Name
-
-      class Person {
-        constructor(name) {
-          this.name = name;
-            `remainder of class body`
-          }
-        }
-
-### Expression
-Class defined by expression assigned to variable
-
-    const Person = class {
-        constructor(name) {
-          this.name = name;
-        }
-     };
 
 ## Side‑by‑Side Comparison
 |Feature  |Class Declaration  | CLass Expression | 
@@ -73,8 +52,14 @@ Class defined by expression assigned to variable
 |Typical use |Defining main classes  | Dynamic or conditional class creation | 
 
 
-#### Classes create multiple objects
-- Define as a class declaration
+
+## Class Declaration Vs Class Expression
+#### Classes allow creation of multiple objects
+
+### Declaration
+- Syntax of class declaration
+- Has `class` keyword and the class Name
+- A body (contains methods and a constructor)
 
         class Dog {
           constructor(name) {
@@ -84,13 +69,16 @@ Class defined by expression assigned to variable
                console.log(`${this.name} says woof!`);
              }
          }
+  
+- Can't be used before being defined
+  
+        const p = new Dog(); // ReferenceError
+        class Dog { body }
 
-#### Contains:
-- class keyword,
-- A Name,
-- A body (contains methods and a constructor)
+#### Create an Instance of a class:
+
+- Instances is created using 'new' keyword
 - Constructor called when object created
-- Instances of the classs can be created using 'new' keyword
 - Example: Create a new instance of Dog class
 
         const dog = new Dog("Gino");
@@ -100,7 +88,9 @@ Class defined by expression assigned to variable
 - Call methods
 
                 dog.bark();
-- Or Defined as a class Expression
+  
+### Expression
+- Class defined as an expression and assigned to variable
 
         const Dog = class {
           constructor(name) {
@@ -111,6 +101,11 @@ Class defined by expression assigned to variable
             console.log(`${this.name} says woof!`);
           }
         };
+- Dynamic, so can be used before declaration
+
+    const Dynamic = Dog();
+    new Dynamic().speak();
+  
 #### Purpose of a constructor 
 - Initialize an objects properties when created
 #### How to create an instance of a class 
