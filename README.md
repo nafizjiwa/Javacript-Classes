@@ -15,13 +15,13 @@ You can define 2 main areas of a class which are created:
  How to create a class?
   1st. Use the class keyword. 
   2nd. Use the class name ==> class Name (first letter capped)
-  3rd. Use parentheses containing the class definition. 
-  4th. Class should have a constructor. Which is a method run once when object is created (sets up object). 
+  3rd. Use parentheses `{}` containing the class definition. 
+  4th. Contain a constructor. A method run when object is created. 
   Result ==>
       class Name {
         definition
         constructor {
-        -BEHAVES LIKE A METHOD AND IS USED TO SET UP THE OBJECT-
+        - A METHOD AND IS USED TO SET UP THE OBJECT-
         }
       }
     
@@ -42,12 +42,14 @@ HOW TO DEFINE INSTANCE PROPERTIES?
 Result --> this.property name
 
 ## Class Declaration Vs Class Expression
+
 ### Declaration
-Uses the class keyword
+`class` keyword and the class Name
 
       class Person {
         constructor(name) {
           this.name = name;
+            `remainder of class body`
           }
         }
 
@@ -60,7 +62,7 @@ Class defined by expression assigned to variable
         }
      };
 
-Side‑by‑Side Comparison
+## Side‑by‑Side Comparison
 |Feature  |Class Declaration  | CLass Expression | 
 |----|----|----|
 |Name required | Yes | No(can be anonymous) | 
