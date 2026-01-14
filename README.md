@@ -73,7 +73,50 @@ Class defined by expression assigned to variable
 |Typical use |Defining main classes  | Dynamic or conditional class creation | 
 
 
+#### Classes create multiple objects
+- Define as a class declaration
 
+        class Dog {
+          constructor(name) {
+          this.name = name;
+           }
+             bark() {
+               console.log(`${this.name} says woof!`);
+             }
+         }
 
+#### Contains:
+- class keyword,
+- A Name,
+- A body (contains methods and a constructor)
+- Constructor called when object created
+- Instances of the classs can be created using 'new' keyword
+- Example: Create a new instance of Dog class
+
+        const dog = new Dog("Gino");
+- To access the property us dot notation
+
+        dog.name
+- Call methods
+
+                dog.bark();
+- Or Defined as a class Expression
+
+        const Dog = class {
+          constructor(name) {
+            this.name = name;
+          }
+        
+          bark() {
+            console.log(`${this.name} says woof!`);
+          }
+        };
+#### Purpose of a constructor 
+- Initialize an objects properties when created
+#### How to create an instance of a class 
+- new keyword, class's Name, arguments 
+#### Difference between class and object 
+- class is a blueprint to create an ojbect
+- Object is an instance of a class
 
 
