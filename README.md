@@ -115,3 +115,12 @@ NOW THE INSTANCE PROPERTIES CAN BE DEFINED IN THE CONSTRUCTOR
 - Object is an instance of a class
 
 
+`this` keyword accesses and manipulates objects
+1. Primary Purpose:
+To access properties and methods of current object
+2. What does `this` refer to
+`this` refers to different objects depending on the context which it is used
+3. When do we use `this`
+To access properties and methods of an object
+
+
