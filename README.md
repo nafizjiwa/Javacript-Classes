@@ -12,31 +12,31 @@ You can define 2 main areas of a class which are created:
       eg. Person (mehtods): run, walk, jump. talk [their actions and behariors.]
       
       
- How to create a class?</br>
-    1. Use the class keyword.</br>
-    2. Use the class name ==> class Name (first letter capped)</br>
-    3. Use parentheses `{}` containing the class definition.</br>
-    4. Contain a constructor. A method run when object is created.</br> 
-  Result ==>
+ ### How to create a class?</br>
+    1. Use class keyword.</br>
+    2. Use the class Name (first letter capped)</br>
+    3. Use curly braces `{}` containing the class definition.</br>
+    4. Has a constructor. A method run when object is created.</br> 
+ #### Result ==>
   
-      class Name {
-        definition
-        constructor {
-        - A METHOD AND IS USED TO SET UP THE OBJECT-
+        class Name {
+          definition
+          constructor {
+          - A METHOD AND IS USED TO SET UP THE OBJECT-
+          }
         }
-      }
     
-**ONCE THE CLASS IS CREATED AN OBJECT FOR THAT CLASS CAN BE CREATED. 
-  1sy Create a variable
+### **ONCE THE CLASS IS CREATED AN OBJECT FOR THAT CLASS CAN BE CREATED. 
+  1. Create a variable
     let variable name
-  2nd Set variable equal to the new class created using the 'new' keyword and objects name
+  2. Set variable equal to the new class created using the 'new' keyword and objects name
     let variable name = new ojbect name
-  3rd Add parenthese to call the constructor method and set object up.
+  3. Add parenthese to call the constructor method and set object up.
     let variable name = new object name();
     
 NOW THE INSTANCE PROPERTIES CAN BE DEFINED IN THE CONSTRUCTOR
 
-HOW TO DEFINE INSTANCE PROPERTIES? 
+#### HOW TO DEFINE INSTANCE PROPERTIES? 
 1.Use the 'this' keyword
   'this' refers to the current object being created by the class. 
 2.Use 'keyword' with property name
