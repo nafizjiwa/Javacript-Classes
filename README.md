@@ -13,10 +13,10 @@ You can define 2 main areas of a class which are created:
       
       
  How to create a class?
-  1st. Use the class keyword. 
-  2nd. Use the class name ==> class Name (first letter capped)
-  3rd. Use parentheses `{}` containing the class definition. 
-  4th. Contain a constructor. A method run when object is created. 
+    1. Use the class keyword.
+    2. Use the class name ==> class Name (first letter capped)
+    3. Use parentheses `{}` containing the class definition.
+    4. Contain a constructor. A method run when object is created. 
   Result ==>
       class Name {
         definition
