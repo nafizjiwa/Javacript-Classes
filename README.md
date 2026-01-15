@@ -123,4 +123,35 @@ To access properties and methods of current object
 3. When do we use `this`
 To access properties and methods of an object
 
+## INHERITANCE
+- Parent is the blueprint for other classes
+- It defines properties and methods inherited by other classes
+- Child class inherits the properties
+- Children can also extend functionality of the parent by adding new props and methods.
+- The keyword `extends` is used to implement inheritance
+- extnds indicates its a child class of another class
+#### Purpose of inheritance
+- To reuse code and create hierarchical relationships between classes
+#### What is the keyword use to inherit from a parent class
+- extends
+#### How are parent and child class different
+- A child class is a specialized version of a parent class
 
+          class Vehicle {                  ---> Parent or superclass
+            constructor(brand, year) {
+              this.brand = brand;
+              this.year = year;
+            }
+          }
+          
+          class Car extends Vehicle {            ---> Child class or subclass
+            constructor(brand, year, numDoors) { ---> has a constructor because it adds a propery numDoors
+              super(brand, year);                ---> super invokes constructor of the parent
+              this.numDoors = numDoors;          ---> This property is exclusive to the Car class
+            }                                    ---> If Child class did not contain a property constructor is not required
+          }
+          
+          let myCar = new Car("bmw", 2016, 4);          ----> create an instance of Car class and store it in myCar
+          console.log(myCar.brand);
+          console.log(myCar.year);
+          console.log(myCar.numDoors);
