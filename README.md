@@ -168,4 +168,24 @@ To access properties and methods of an object
           console.log(myTire.year);  //2019
           myTire.honk();   //"I have a flat tire" 
 
-  - 
+## A STATIC METHOD OR PROPERTY
+- `static` keyword says the method or property belongs to the class and not to the instance of the class
+- Method and properties are accessed directly through the className with dot notation
+ 
+            class Pizza {
+            static numberOfPizzasSold = 0;   //Define static property
+                                              //It belongs to the class
+            constructor(type) {
+              this.type = type;
+              Pizza.numberOfPizzasSold++;
+            }
+              static createMargherita() {      //Define static method
+                    return new this("Margherita", 6.99);
+                }                    //Use keyword `this` as it belongs to the class
+            }
+          
+          let pizza1 = new Pizza("Margherita");   //Define instance of the class
+          let pizza2 = new Pizza("Neapolitan");
+          
+          console.log(Pizza.numberOfPizzasSold);   //Access property
+          let myPizza = Pizza.createMargherita();  //Call method 
