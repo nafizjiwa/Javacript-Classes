@@ -136,6 +136,7 @@ To access properties and methods of an object
 - extends
 #### How are parent and child class different
 - A child class is a specialized version of a parent class
+- As in below example a chld that adds a property actually extends the parent
 
           class Vehicle {                  ---> Parent or superclass
             constructor(brand, year) {
@@ -143,6 +144,12 @@ To access properties and methods of an object
               this.year = year;
             }
           }
+  
+          class Tire extends Vehicle {            ---> Tire extend Vehicle but not with new properties
+                Flat() {                          ---> It only extends with a method
+                  console.log("I have a Flate tire!");    ---> constructor not requred to extend
+                }
+            }
           
           class Car extends Vehicle {            ---> Child class or subclass
             constructor(brand, year, numDoors) { ---> has a constructor because it adds a propery numDoors
@@ -155,3 +162,10 @@ To access properties and methods of an object
           console.log(myCar.brand);
           console.log(myCar.year);
           console.log(myCar.numDoors);
+
+          let myTire = new Tire("honda", 2019);
+          console.log(myTire.brand); // honda
+          console.log(myTire.year);  //2019
+          myTire.honk();   //"I have a flat tire" 
+
+  - 
