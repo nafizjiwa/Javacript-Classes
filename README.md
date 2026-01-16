@@ -1,25 +1,29 @@
 # Javacript-Classes
 
 ## CLASSES
-- A blueprint used to create objects.
+- Are a blueprint to create (intantiate) objects.
 - The objects do an action.
-- The class creates:
-  1. What an object will have --> each Instance has properties - Data
+- The class creates what an object will:
+  1. HAS --> an Instance has properties - Data
       eg. Person (properties): name, height, age.
-  2. What an object will do --> each Instance has methods.
+  2. DOES --> an Instance has methods.
       Instance methods use instances properties to get results. 
-      eg. Person (mehtods): run, walk, jump. talk [their actions and behariors.]
+      eg. Person (mehtods): run, walk, jump. talk [actions and behariors.]
        
  ### How to create a class?</br>
-    1. Use class keyword.</br>
-    2. Use the class Name (first letter capped)</br>
-    3. Use curly braces `{}` containing the class definition.</br>
-    4. Has a constructor. A method run when object is created.</br> 
+    1. Declare with:
+        a. The keyword `class`.</br>
+        b. A Name (first letter capped)</br>
+    2. Curly braces `{}` contain the class definition.</br>
+    3. Contains a constructor. A method run when object is created.</br> 
+            - properties are set when instantiated
  #### Result ==>
   
         class Name {
           definition
-          constructor 
+          constructor(){
+          this.variable = value;
+          }
           `remainder of class body`
           - A METHOD AND IS USED TO SET UP THE OBJECT-
           }
@@ -177,7 +181,7 @@ To access properties and methods of an object
                                               //It belongs to the class
             constructor(type) {
               this.type = type;
-              Pizza.numberOfPizzasSold++;
+              Pizza.numberOfPizzasSold++;  //When instance created the pizza # increases by 1
             }
               static createMargherita() {      //Define static method
                     return new this("Margherita", 6.99);
@@ -188,4 +192,13 @@ To access properties and methods of an object
           let pizza2 = new Pizza("Neapolitan");
           
           console.log(Pizza.numberOfPizzasSold);   //Access property
-          let myPizza = Pizza.createMargherita();  //Call method 
+          let myPizza = Pizza.createMargherita();  //Call method
+
+#### Primary purpose of a static method
+- To define methods that can be accessed without creating an instance of class
+#### The difference between static mehod and an instance method
+- Static methods are associated with the class. Instance associated with instance of the class
+#### How can we access a static property
+- Directly with class name and the property name
+
+
