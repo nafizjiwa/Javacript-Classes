@@ -147,13 +147,14 @@ To access properties and methods of an object
               this.brand = brand;
               this.year = year;
             }
+             flat(){ console.log("I don't have a flate tire!)}
           }
   
-          class Tire extends Vehicle {            ---> Tire extend Vehicle but not with new properties
-                Flat() {                          ---> It only extends with a method
+          class Tire extends Vehicle {         ---> Tire extend Vehicle but not with new properties
+                flat() {                          ---> It only extends with a method
                   console.log("I have a Flate tire!");    ---> constructor not requred to extend
                 }
-            }
+            }     ---> A child that extends a parent with a duplicate function overides the parent
           
           class Car extends Vehicle {            ---> Child class or subclass
             constructor(brand, year, numDoors) { ---> has a constructor because it adds a propery numDoors
