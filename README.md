@@ -1,12 +1,12 @@
 # Javacript-Classes
 
 ## CLASSES
-- Are a blueprint to create (intantiate) objects.
+- They define blueprints to create (intantiate) objects and encapsulate data.
 - The objects do an action.
-- The class creates what an object will:
-  1. HAS --> an Instance has properties - Data
+- Objects have:
+  1. Properties --> Data
       eg. Person (properties): name, height, age.
-  2. DOES --> an Instance has methods.
+  2. Mehods --> functions.
       Instance methods use instances properties to get results. 
       eg. Person (mehtods): run, walk, jump. talk [actions and behariors.]
        
