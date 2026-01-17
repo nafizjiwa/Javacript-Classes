@@ -130,8 +130,8 @@ To access properties and methods of an object
 ## INHERITANCE
 - Parent is the blueprint for other classes
 - It defines properties and methods inherited by other classes
-- Child class inherits the properties
-- Children can also extend functionality of the parent by adding new props and methods.
+- Child class inherits properties and methods from parent
+- Children can extend functionality of the parent by adding new properties and methods.
 - The keyword `extends` is used to implement inheritance
 - extnds indicates its a child class of another class
 #### Purpose of inheritance
@@ -200,5 +200,8 @@ To access properties and methods of an object
 - Static methods are associated with the class. Instance associated with instance of the class
 #### How can we access a static property
 - Directly with class name and the property name
+
+
+#### Classes in JavaScript are used to define blueprints for creating objects, and encapsulating data. Classes include a constructor which is a special method that gets called automatically when a new object is created from the class. It is used to initialize the properties of the object. The this keyword is used here to refer to the current instance of the class. Below the constructor, you can have what are called methods. Methods are functions defined inside a class that perform actions or operations on the class's data or state. They are used to define behaviors that instances of the class can perform.
 
 
