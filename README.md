@@ -133,7 +133,7 @@ To access properties and methods of an object
 - Child class inherits properties and methods from parent
 - Children can extend functionality of the parent by adding new properties and methods.
 - The keyword `extends` is used to implement inheritance
-- extnds indicates its a child class of another class
+    - It indicates its a class is a child of another class
 #### Purpose of inheritance
 - To reuse code and create hierarchical relationships between classes
 #### What is the keyword use to inherit from a parent class
